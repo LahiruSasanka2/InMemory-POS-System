@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="402.0" prefWidth="269.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep.fx.controllers.LogInPageController">
+   <children>
+      <ImageView fitHeight="179.0" fitWidth="297.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Background.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnLogin" layoutX="157.0" layoutY="310.0" mnemonicParsing="false" onAction="#clickOnLoginbtn" prefHeight="33.0" prefWidth="92.0" style="-fx-background-color: darkblue;" text="Login" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <ImageView fitHeight="135.0" fitWidth="146.0" layoutX="76.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/POS%20LOGO.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtUserName" labelFloat="true" layoutX="25.0" layoutY="221.0" onAction="#enterOnUserNameTxt" prefHeight="25.0" prefWidth="224.0" promptText="User Name" />
+      <JFXTextField fx:id="txtPassword" labelFloat="true" layoutX="25.0" layoutY="269.0" onAction="#clickEnterOnPassword" prefHeight="25.0" prefWidth="224.0" promptText="Password" />
+   </children>
+</AnchorPane>
